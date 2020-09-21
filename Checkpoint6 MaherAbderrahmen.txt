@@ -1,0 +1,292 @@
+Microsoft Windows [Version 10.0.18362.1082]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\LENOVO>cd desktop
+
+C:\Users\LENOVO\Desktop>cd GoMyCode
+
+C:\Users\LENOVO\Desktop\GoMyCode>cd Checkpoints
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>type nul > third.txt
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git init
+Initialized empty Git repository in C:/Users/LENOVO/Desktop/GoMyCode/Checkpoints/.git/
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git add third.txt
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git commit '"adding third.txt"'
+error: pathspec ''adding third.txt'' did not match any file(s) known to git
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git commit -m '"adding third.txt"'
+[master (root-commit) eba9cd4] 'adding third.txt'
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git log
+commit eba9cd4b1535191318309dc2802a275116afb28f (HEAD -> master)
+Author: MaherAbderrahmen <maher.abderrahmen@gmail.com>
+Date:   Mon Sep 21 11:42:25 2020 +0100
+
+    'adding third.txt'
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>type nul > fourth.txt
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git add fourth.txt
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git commit -m '"adding fourth.txt" '
+error: pathspec ''' did not match any file(s) known to git
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git commit -m '"adding fourth.txt"'
+[master 4805dc2] 'adding fourth.txt'
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git rm --cached third.txt
+rm 'third.txt'
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git add .
+warning: LF will be replaced by CRLF in Checkpoint2/res/Hypertext_Markup_Language.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Checkpoint3/res/Hypertext_Markup_Language.html.
+The file will have its original line endings in your working directory
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git commit -m '"removing third.txt"'
+[master acedb55] 'removing third.txt'
+ 25 files changed, 3388 insertions(+)
+ create mode 100644 Checkpoint test/Portofolio.html
+ create mode 100644 Checkpoint1/Web fundamentals.pptx
+ create mode 100644 Checkpoint2/Checkpoint2 Maher Abderrahmen.html
+ create mode 100644 Checkpoint2/res/1200px-HTML5_logo_and_wordmark.svg.png
+ create mode 100644 Checkpoint2/res/Hypertext_Markup_Language.html
+ create mode 100644 Checkpoint3/Checkpoint3 Maher Abderrahmen.html
+ create mode 100644 Checkpoint3/css/styles.css
+ create mode 100644 Checkpoint3/res/1200px-HTML5_logo_and_wordmark.svg.png
+ create mode 100644 Checkpoint3/res/Hypertext_Markup_Language.html
+ create mode 100644 Checkpoint4/Checkpoint4 Maher Abderrahmen.html
+ create mode 100644 Checkpoint4/css/styles.css
+ create mode 100644 Checkpoint4/res/sygnet.png
+ create mode 100644 Checkpoint5/1.jpg
+ create mode 100644 Checkpoint5/2.jpg
+ create mode 100644 Checkpoint5/3.jpg
+ create mode 100644 Checkpoint5/check.css
+ create mode 100644 Checkpoint5/check.html
+ create mode 100644 Checkpoint5/index.js
+ create mode 100644 Checkpoint5/socks.jpg
+ create mode 100644 Checkpoint5/trausers.jpg
+ create mode 100644 Checkpoint5/tshirt.jpg
+ create mode 100644 docplanner-checkpoint.rar
+ create mode 100644 docplanner-checkpoint/.vscode/settings.json
+ create mode 100644 docplanner-checkpoint/docplanner-style.css
+ create mode 100644 docplanner-checkpoint/docplanner.html
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git log
+commit acedb55150f0410307124caaa961e11ac31e5559 (HEAD -> master)
+Author: MaherAbderrahmen <maher.abderrahmen@gmail.com>
+Date:   Mon Sep 21 11:54:48 2020 +0100
+
+    'removing third.txt'
+
+commit 4805dc2b14a627f5e7b1c68b2c0948ba9e77d068
+Author: MaherAbderrahmen <maher.abderrahmen@gmail.com>
+Date:   Mon Sep 21 11:46:27 2020 +0100
+
+    'adding fourth.txt'
+
+commit eba9cd4b1535191318309dc2802a275116afb28f
+Author: MaherAbderrahmen <maher.abderrahmen@gmail.com>
+Date:   Mon Sep 21 11:42:25 2020 +0100
+
+    'adding third.txt'
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global core.pager ''
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global core.pager ''
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global core.pager.cat''
+error: invalid key: core.pager.cat''
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global core.pager
+''
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>core.pager=cat
+'core.pager' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>GIT_PAGER=cat git diff
+'GIT_PAGER' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global core.pager cat
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+user.email=maher.abderrahmen@gmail.com
+user.name=MaherAbderrahmen
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git remote add origin https://github.com/MaherAbderrahmen/Checkpoint6-MaherAbderrahmen
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>git push origin master
+Enumerating objects: 42, done.
+Counting objects: 100% (42/42), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (42/42), 835.22 KiB | 9.71 MiB/s, done.
+Total 42 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/MaherAbderrahmen/Checkpoint6-MaherAbderrahmen
+ * [new branch]      master -> master
+
+C:\Users\LENOVO\Desktop\GoMyCode\Checkpoints>MtMi9fsNj2k6Txr
